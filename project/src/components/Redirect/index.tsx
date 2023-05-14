@@ -16,13 +16,14 @@ export const Redirect = () => {
         }, 1000)
         
         if ( time < 0 ) {
-            navigate('/');
+            navigate('/about' );
+            
         }
         return () => {
             clearTimeout(timeout.current);
         }
 
-    }, [time])
+    }, [time]);
 
     return (
         <div>

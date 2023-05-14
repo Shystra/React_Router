@@ -8,6 +8,7 @@ import { About } from './components/About/index.tsx';
 import { Menu } from './components/Menu/index.tsx';
 import { Post } from './components/Post/index.tsx';
 import { Redirect } from './components/Redirect/index.tsx';
+import { NotFound } from './components/NotFound/index.tsx';
 
 
 
@@ -26,6 +27,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
         <Route path='Posts' element={<Post />}/>
         <Route path='/Posts/:id' element={<Post />}/>
         <Route path='/Redirect' element={<Redirect />}/>
+        <Route path='*' element={<NotFound />}/>
         
 
 
